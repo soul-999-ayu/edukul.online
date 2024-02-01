@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Information</title>
+	 <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+<!--   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)"> -->
+
+</head>
+<body id="top" onload="get()">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">EduKul</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">EduKul</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#event" class="navbar-link" data-nav-toggler>Projects</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+ -->
+          <li class="navbar-item">
+            <a href="extra.html#contact" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="extra.html#about" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">About us</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field" id="searchBox">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler id="searchButton" onclick="search()">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+ <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="SGAM99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/attack-mode.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Personality Development</p>
+
+            <h2 class="h1 hero-title">Shwetabh's Attack Mode</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This will destroy your tendency to give up. Fears and doubts will be gone.<br>
+            	2. You will achieve multiple goals at once by using superior planning strategies.<br>
+            	3. You will destory the problems by gaining access to problem solving methods and templates.
+            	
+            </p>
+
+           <!--  <form  name="google-sheet" method="post" action="javascript:go()">
+            	<div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="text" name="TxId" aria-label="TxId" placeholder="Enter your transaction Id" required
+                class="email-field" id="TxId">
+
+              <ion-icon name="qr-code-outline" aria-hidden="true"></ion-icon>
+
+            </div>
+            	<div style="display: flex; justify-content: center;">
+            	<button type="submit" class="btn btn-primary" name="submit" id="submit">
+              <span class="span">Continue</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+            </div>
+            </form> -->
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Attack Mode', 'SGAM99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="JPP149" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/peterson.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Personality Development</p>
+
+            <h2 class="h1 hero-title">Jordan Peterson - Personality</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Discover the implicit strengths and weaknesses in your personality and how they can be leveraged to thrive in the world.<br>
+            	2. Improve your ability to deal with and understand those around you who have different personalities.<br>
+            	3. Learn valuable insights that can improve many aspects of your life from your work to your personal development, career, relationships and parenthood.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Jordan Peterson - Personality', 'JPP149', 149)">
+              <span class="span">Purchase @149</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+    <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="IGK199" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/kaizen-cure.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Personality Development</p>
+
+            <h2 class="h1 hero-title">Iman Gadzhi's Kaizen Cure</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Help you to get out of repetitive behaviors that don’t lead to success (or anywhere).<br>
+            	2. Learn how to meditate on future accomplishments and how to feel deserving about success.<br>
+            	3. You will achieve more focus and more positive energy. You will feel it every day you start your work.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Iman Gadzhi Kaizen Cure', 'IGK199', 199)">
+              <span class="span">Purchase @199</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="ETH199" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/ethical-hacking.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Ethical Hacking</p>
+
+            <h2 class="h1 hero-title">Complete Ethical Hacking</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This plays a key role in the battle against cyber terrorism and national security breaches.<br>
+            	2. Banking and financial institutions will be much safer due to proper ethical hacking measures.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Complete Ethical Hacking', 'ETH199', 199)">
+              <span class="span">Purchase @199</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+        <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="TSEH49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/sagar.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Ethical Hacking</p>
+
+            <h2 class="h1 hero-title">Sagar's Ethical Hacking</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This plays a key role in the battle against cyber terrorism and national security breaches.<br>
+            	2. You'll be able to perform hacking attacks and ban someone's Id.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Sagar Ethical Hacking', 'TSEH49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+            <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="EHWP29" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/hacking-python.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Ethical Hacking</p>
+
+            <h2 class="h1 hero-title">Ethical Hacking with Python</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll be able to build tools and scripts that can be used to perform attacks.<br>
+            	2. You'll be able to perform hacking attacks and ban someone's Id.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Ethical Hacking with Python', 'EHWP29', 29)">
+              <span class="span">Purchase @29</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+                 <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="SS7T29" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/ss7.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Ethical Hacking</p>
+
+            <h2 class="h1 hero-title">Signaling System 7</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You can manipulate signaling links and gather information.<br>
+            	2. You can be safe by securing your signaling links from hackers.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Signaling System 7', 'SS7T29', 29)">
+              <span class="span">Purchase @29</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+                       <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="DPKL49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/directory-penetration.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Ethical Hacking</p>
+
+            <h2 class="h1 hero-title">Active Directory Penetration</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll be able to crack active directory and gather information.<br>
+            	2. You'll learn basics of pentesting and will be able to perofrm it.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Directory Penetration', 'DPKL49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+                           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="REAS99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/reverse.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Android Courses</p>
+
+            <h2 class="h1 hero-title">Reverse Engineering and Android Apps</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Gain a more in-depth understanding of a completed object and Android Apps.<br>
+            	2. Understand how a system functions and what elements of the software lead to its failure to operate.<br>
+            	3. Repair an existing product or gather information using this engineering technique.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Reverse Engineering', 'REAS99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+                           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="AETH49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/hacking-android.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Android Courses</p>
+
+            <h2 class="h1 hero-title">Android Ethical Hacking</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This plays a key role in the battle against cyber terrorism and national security breaches.<br>
+            	2. Banking and financial institutions will be much safer due to proper ethical hacking measures.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Android Ethical Hacking', 'AETH49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+                                <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="HWTA49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/hacking-termux.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Android Courses</p>
+
+            <h2 class="h1 hero-title">Hacking with Termux</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This plays a key role in the battle against cyber terrorism and national security breaches.<br>
+            	2. You'll learn some basic hacking techniques and linux commands.<br>
+            	3. You will be able to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Hacking with Termux', 'HWTA49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+                                <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="ACJ199" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/apna-java.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Coding and Ai</p>
+
+            <h2 class="h1 hero-title">Apna College Java 4.0</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Complete Java course with Data Structures & Algorithms.<br>
+            	2. Build projects related to real life and improve your skills.<br>
+            	3. Resume Preparation and Extra Mentorship Sessions.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Apna College Java 4.0', 'ACJ199', 199)">
+              <span class="span">Purchase @199</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+                                     <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="PWML99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/python-ml.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Coding and Ai</p>
+
+            <h2 class="h1 hero-title">Python with Machine Learning</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Complete Python course with Machine Learning.<br>
+            	2. Build projects related to real life and improve your skills.<br>
+            	3. Will help you to improve your skills and get more career opportunities.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Python with Machine Learning', 'PWML99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="DGPT99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/mastergpt.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Coding and Ai</p>
+
+            <h2 class="h1 hero-title">Dhruv Rathee's MasterGPT Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Complete ChatGPT course from basic to advance.<br>
+            	2. Will help you to complete your job in less time with the help of ChatGPT.<br>
+            	3. Build Your career in Ai and Machine learning field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Dhruv Rathee MasterGPT', 'DGPT99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="ACW149" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+         <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/apna-web.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Web Development</p>
+
+            <h2 class="h1 hero-title">Apna College Full Stack Web Development</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Learn full stack web development with projects and examples.<br>
+            	2. Will help you to build your own websites from scratch.<br>
+            	3. Build Your career in Web Development field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Apna College Full Stack Web Development', 'ACW149', 149)">
+              <span class="span">Purchase @149</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="WDBC79" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/web-bootcamp.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Web Development</p>
+
+            <h2 class="h1 hero-title">Web Development Bootcamp</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Learn full stack web development with projects and examples.<br>
+            	2. Will help you to build your own websites from scratch.<br>
+            	3. Build Your career in Web Development field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Web Development Bootcamp', 'WDBC79', 79)">
+              <span class="span">Purchase @79</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="URRM49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/react.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Web Development</p>
+
+            <h2 class="h1 hero-title">The Ultimate React Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. Become an advanced, confident, and modern React developer from scratch.<br>
+            	2. Become job-ready by working with libraries and tools used in professional projects.<br>
+            	3. Build 8+ beautiful projects, including one HUGE professional real-world app.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('React, Redux and More', 'URRM49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+                <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="BRAN29" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/restful.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Web Development</p>
+
+            <h2 class="h1 hero-title">RESTful APIs with Node.js and Express</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll learn how to build and manage resful APIs.<br>
+            	2. You'll be able to use it to get more career opportunities.<br>
+            	3. You'll be able to implement it in your very own projects.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('RESTful APIs with Node.js and Express', 'BRAN29', 29)">
+              <span class="span">Purchase @29</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="APPC99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/photoshop.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Softwares</p>
+
+            <h2 class="h1 hero-title">Adobe Photoshop Professional Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll learn how to edit pictures professionally and make your portfolio more attractive.<br>
+            	2. You'll be able to use it to get more career opportunities.<br>
+            	3. You'll be able to work as a freelancer.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Adobe Photoshop Professional', 'APPC99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="MGDM49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/motion.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Softwares</p>
+
+            <h2 class="h1 hero-title">Motion Graphics 2D and 3D with After Effects</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll learn all the basics of Animations and Motion Graphics.<br>
+            	2. You'll be able to make your own animations and stories.<br>
+            	3. You'll be able to work as a freelancer or get a job of an Animator.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Motion Graphics 2D and 3D', 'MGDM49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+         <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="EMAD49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/excel.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Softwares</p>
+
+            <h2 class="h1 hero-title">Excel: Managing and Analysing Data</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll learn how to use excel, all its basic commands and tricks.<br>
+            	2. You'll be able to manage and analyse big data using excel.<br>
+            	3. You'll be able to work as a freelancer or get a job.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Excel: Managing and Analysing Data', 'EMAD49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+               <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="MTLB49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/matlab.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Softwares</p>
+
+            <h2 class="h1 hero-title">MATLAB Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. You'll learn everything about MATLAB and its basics with tips and trics.<br>
+            	2. You'll be able to make shapes and objects using MATLAB.<br>
+            	3. You'll be able to work as a freelancer or get a job.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('MATLAB for Engineers', 'MTLB49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+                    <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="DMC149" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/largest-dm.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Digital Marketing and Money Making</p>
+
+            <h2 class="h1 hero-title">Largest Digital Marketing Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes Amazon FBA, E-COMMERCE, Audio Books, Seo Courses, Dropshipping, Google Adword and more.<br>
+            	2. You'll be able to increase the sales of your product upto 100 times.<br>
+            	3. You'll be able to work in marketing field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Largest Digital Marketing Course', 'DMC149', 149)">
+              <span class="span">Purchase @149</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+                         <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="PFDM99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/dm-freelancing.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Digital Marketing and Money Making</p>
+
+            <h2 class="h1 hero-title">Paid Digital Marketing and Freelancing</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes Social Media Marketing, Wordpress Development, Android App Development and more.<br>
+            	2. You'll be able to increase the sales of your product upto 100 times.<br>
+            	3. You'll be able to work in marketing field and as well as a freelancer.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Paid Digital Marketing and Freelancing', 'PFDM99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="HAFC99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/fba.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Digital Marketing and Money Making</p>
+
+            <h2 class="h1 hero-title">Hadi's Amazon FBA with Tool</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes full Amazon FBA Course with Tools and more.<br>
+            	2. You'll be able to increase the sales of your product on Amazon and other platform.<br>
+            	3. You'll be able to work in marketing field and as well as a freelancer.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Hadi Amazon FBA with Tools', 'HAFC99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+           <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="VAGA49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/vaga-trading.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Digital Marketing and Money Making</p>
+
+            <h2 class="h1 hero-title">VagaFX Trading Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes all the trading basics with tips and trics and more.<br>
+            	2. You'll be able to increase your earnings each week by investing in right stocks.<br>
+            	3. You'll be able to work in Stock marketing field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('VagaFX Trading Course', 'VAGA49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+                 <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="ATRW99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/tate.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Digital Marketing and Money Making</p>
+
+            <h2 class="h1 hero-title">Andrew Tate's Real World Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes all the business basics with tips and trics and more.<br>
+            	2. You'll be able to make more money with less work and in less time.<br>
+            	3. You'll be able to work in any field and get paid.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Andrew Tate Real World', 'ATRW99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+                       <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="ISPY99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/protection.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Being Safe and Jobs</p>
+
+            <h2 class="h1 hero-title">Information Security 2023</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes all the basics of hackers and hacking.<br>
+            	2. This course will help you to protect yourself and your family from hackers.<br>
+            	3. You'll be able to work in cybersecurity field and help others.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Information Security 2023', 'ISPY99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+                             <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="CPM149" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/placement.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Being Safe and Jobs</p>
+
+            <h2 class="h1 hero-title">Campus Placement Material 2023</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes placement material of 100+ companies.<br>
+            	2. This course will help you to get a good paying job within few months of learning.<br>
+            	3. You'll be able to make your life stable.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Campus Placement Course', 'CPM149', 149)">
+              <span class="span">Purchase @149</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+                             <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="MIHP49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/insta-hack.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">Mega Instagram Hackpack</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to hack instagram.<br>
+            	2. This course will help you to keep yourself safe and how to increase followers.<br>
+            	3. You'll be able to hack anyone's account or do a prank with them.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Mega Instagram Hackpack', 'MIHP49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+                                  <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="PHP149" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/social-hack.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">Complete Paid Hackpack Course</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches, techniques and tools that can be used to hack.<br>
+            	2. This course will help you to build hacking scripts and viruses.<br>
+            	3. You'll be able to hack anyone's account or do a prank with them.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Paid Hackpack with Tools', 'PHP149', 149)">
+              <span class="span">Purchase @149</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="CCIP99" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/camera.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">CCTV and IP Camera Hacking</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to hack camera.<br>
+            	2. This course will help you to hack any CCTV or IP Camera.<br>
+            	3. You'll be able to get a job in cybersecurity field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('CCTV and IP Camera Hacking', 'CCIP99', 99)">
+              <span class="span">Purchase @99</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+          <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="SCVS49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/virus.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">Sim Cloning and Virus</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to get access to sim and spread viruses.<br>
+            	2. This course will help you to clone someone's sim and get access to OTPs and calls.<br>
+            	3. You'll be able to get a job in cybersecurity field.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Sim Cloning and Virus', 'SCVS49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+              <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="WBFC29" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/wa-banning.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">WhatsApp Banning with Tools</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to ban someone's WhatsApp.<br>
+            	2. This course will help you to ban someone's account and take revenge.<br>
+            	3. You'll be able to help others by directly banning spammers and scammers.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('WhatsApp Banning with Tools', 'WBFC29', 29)">
+              <span class="span">Purchase @29</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+                   <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="PGWH49" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/gateway.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Illegal Hacking</p>
+
+            <h2 class="h1 hero-title">Payment Gateway Bypass and WiFi Hacking</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to bypass payment gateways and hack wifi.<br>
+            	2. This course will help you to hack secured WiFi networks.<br>
+            	3. You'll be able to enjoy free services and internet.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('Gateway Bypass and WiFi Hacking', 'PGWH49', 49)">
+              <span class="span">Purchase @49</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+                         <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="A2YT29" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/courses/youtube-mastery.jpg" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Extra Courses</p>
+
+            <h2 class="h1 hero-title">A2 Sir's YouTube Mastery</h2>
+
+            <p class="hero-text" style="font-size: 20px;">
+            	<font>Features of this course:</font><br>
+            	1. This course includes different approaches and techniques that can be used to make a successful YouTube career.<br>
+            	2. This course will help you to generate passive income.<br>
+            	3. You'll be able to enjoy your YouTube fame.
+            	
+            </p>
+
+            <div style="display: flex; justify-content: center;">
+            	
+            	<a href="#" class="btn btn-primary"  onclick="go('A2 Sir YouTube Mastery', 'A2YT29', 29)">
+              <span class="span">Purchase @29</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </div>
+            
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+</article>
+</main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">EduKul</a> -->
+          <!-- <div style="width: 90px;"><div style="float: left;"><img src="favicon.png" class="logo" width="80px" style="  
+  position: relative;"></div><p style="float: left;">EduKul</p></div> -->
+
+  		<!-- <img src="favicon.png" width="80px;"> -->
+  		<!-- <div>
+    <p style="float: left;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="margin-left: 20px;">EduKul</p>
+</div> -->
+<div style="clear: left;">
+    <p style="float: left; margin-right: 20px;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="padding-top: 25px;">EduKul Online</p>
+</div>
+
+          <p class="section-text">
+            EduKul is an educational company founded by two friends, Ayush and Vivek. EduKul is known for its education delivery at cheap rates and within minutes of purchasing.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://instagram.com/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/DeadSOUL-Studios/" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="send-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:support@edukul.online" class="social-link" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="extra.html#about" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Request Courses</span>
+            </a>
+          </li>
+
+ <!--          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+         <!--  <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Testimonial</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.privacypolicygenerator.org/live.php?token=7KGdjhQWAzMKz1OK5Bzf2jbr5IsDyMMr" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="extra.html#contact" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#courses" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.termsandconditionsgenerator.com/live.php?token=SINKgdDHQRrPJVJpE6JMt6ziiGttoztp" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Patel Nagar, New Delhi-08, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
+
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+            <a href="https://instagram.com/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:support@edukul.online" class="footer-link" target="_blank">support@edukul.online</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2023 @EduKul. All Rights Reserved by <a href="https://github.com/DeadSOUL-Studios/" class="copyright-link" target="_blank">DeadSOUL-Studios.</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+
+
+
+  
+
+
+<!--  <input type="button" value="GET" onclick="get()"> -->
+
+
+
+
+<!-- Main Things to get value -->
+<!-- <input type="text" id="logId" />
+<div id="logId1"></div>
+ -->
+
+
+
+
+<!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzYQqSm4wbXp9fTpPrfMMcEyziBh01LK4SW4tGTBpv5yLvJLCJ9zQbP7QvCELy9pe7PiQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script> -->
+
+<!-- 	<script>
+function get () {
+  // (A) GET FROM LOCAL STORAGE
+  var one = localStorage.getItem("one"),
+      two = localStorage.getItem("two"),
+      three = localStorage.getItem("three"),
+      four = localStorage.getItem("four"),
+      five = localStorage.getItem("five"),
+      six = localStorage.getItem("six");
+
+  // (B) IT WORKS!
+  console.log(one);
+  console.log(two);
+  console.log(three);
+  console.log(four);
+  console.log(five);
+  console.log(six);
+
+  // (C) CLEAR LOCAL STORAGE
+  // localStorage.removeItem("KEY");
+  // localStorage.clear();
+  //document.getElementById("logId").value=one;
+	 document.getElementById("courseName").innerHTML=one;
+	 document.getElementById("coursePrice").innerHTML="Step 2. Pay &#8377;"+three+" and keep your transaction Id";
+}
+</script> -->
+
+<script>
+function go (n="none", p="none", c=99) {
+  // (A) VARIABLES TO PASS
+  var one = n,
+      two = p;
+      three = c;
+
+  // (B) SAVE TO LOCAL STORAGE
+  localStorage.setItem("one", one);
+  localStorage.setItem("two", two);
+  localStorage.setItem("three", three);
+
+ 
+  // (C) REDIRECT OR OPEN NEW WINDOW IF YOU WANT
+  location.href = "gateway.html";
+}
+</script>
+
+    <script type="text/javascript">
+    function search(){
+    	str = document.getElementById('searchBox').value;//jQuery("#search_text").val();
+	    if (parseInt(navigator.appVersion)<4) return;
+	    var strFound;
+	    if (window.find) {
+
+	        // CODE FOR BROWSERS THAT SUPPORT window.find
+
+	        var original_content = window;
+	        strFound=original_content.find(str);
+	        if (!strFound) {
+	            strFound=original_content.find(str,0,1);
+	            while (original_content.find(str,0,1)) continue;
+	        }
+	    }
+	    else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+	        // EXPLORER-SPECIFIC CODE
+
+	        if (TRange!=null) {
+	            TRange.collapse(false);
+	            strFound=TRange.findText(str);
+	            if (strFound) TRange.select();
+	        }
+	        if (TRange==null || strFound==0) {
+	            TRange=self.document.body.createTextRange();
+	            strFound=TRange.findText(str);
+	            if (strFound) TRange.select();
+	        }
+	    }
+	    else if (navigator.appName=="Opera") {
+	        alert ("Opera browsers not supported, sorry...")
+	        return;
+	    }
+	    if (!strFound) alert ("String '"+str+"' not found!")
+	    return;
+	}
+  </script>
+
+
+
+
+
+  <script src="./assets/js/script.js" defer></script>
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

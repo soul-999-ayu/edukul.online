@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanks for Purchasing</title>
+	 <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+<!--   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)"> -->
+
+</head>
+<body id="top" onload="get()">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">EduKul</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">EduKul</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#event" class="navbar-link" data-nav-toggler>Projects</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+ -->
+          <li class="navbar-item">
+            <a href="extra.html#contact" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+       <!--  <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button> -->
+
+        <a href="extra.html#about" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">About us</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+ <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+        	<figure class="hero-banner" style="margin-block-start: 0px;">
+
+            <img src="./assets/images/tick.png" width="250" height="250" loading="lazy" alt="hero image"
+              class="w-100" style="height: 250px;">
+
+            <!-- <img src="./assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="./assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2"> -->
+
+          </figure>
+          <div class="hero-content">
+
+            <p class="section-subtitle">Thank You for Purchasing</p>
+
+            <h2 class="h1 hero-title" id="cName"></h2>
+            
+            <p class="hero-text" id="displayID">
+            </p>
+            <p class="hero-text">Your course will be delivered withing <font  color="green">24 Hours</font> to your given mail address after manually verifying the payment.</p>
+
+            <p class="hero-text" style="font-size: 15px;">Entered wrong email? Contact our support team with your order ID <font onClick=javascript:support() color="blue">here</font>.</p>
+
+
+
+
+
+
+
+
+
+
+
+                      <form class="newsletter-form" name="google-sheet" method="post">
+          	<!-- <div class="input-wrapper">
+          		<input type="email" name="email" placeholder="Enter your mail address">
+
+          		<input type="text" name="text" placeholder="Enter your mail address">
+          	</div> -->
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="Name" aria-label="Name" placeholder="Enter your full name" required
+                class="email-field" id="userName">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="Email" aria-label="Email" placeholder="Enter your full name" required
+                class="email-field" id="userMail">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="Number" aria-label="Number" placeholder="Enter your full name" required
+                class="email-field" id="userNumber">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="Course" aria-label="Course" placeholder="Enter your full name" required
+                class="email-field" id="courseName">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="Code" aria-label="Code" placeholder="Enter your full name" required
+                class="email-field" id="courseCode">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="TransactionID" aria-label="TransactionID" placeholder="Enter your full name" required
+                class="email-field" id="TransactionID">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="hidden" name="OrderID" aria-label="OrderID" placeholder="Enter your full name" required
+                class="email-field" id="OrderID">
+
+              <!-- <ion-icon name="person-outline" aria-hidden="true"></ion-icon> -->
+
+            </div>
+
+            
+          </form>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <a href="#" class="btn btn-primary">
+              <span class="span">Get Started Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a> -->
+
+          </div>
+
+          
+
+        </div>
+      </section>
+</article>
+</main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">EduKul</a> -->
+          <!-- <div style="width: 90px;"><div style="float: left;"><img src="favicon.png" class="logo" width="80px" style="  
+  position: relative;"></div><p style="float: left;">EduKul</p></div> -->
+
+  		<!-- <img src="favicon.png" width="80px;"> -->
+  		<!-- <div>
+    <p style="float: left;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="margin-left: 20px;">EduKul</p>
+</div> -->
+<div style="clear: left;">
+    <p style="float: left; margin-right: 20px;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="padding-top: 25px;">EduKul Online</p>
+</div>
+
+          <p class="section-text">
+            EduKul is an educational company founded by two friends, Ayush and Vivek. EduKul is known for its education delivery at cheap rates and within minutes of purchasing.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://instagram.com/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/DeadSOUL-Studios/" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="send-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:support@edukul.online" class="social-link" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="extra.html#about" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Request Courses</span>
+            </a>
+          </li>
+
+ <!--          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+         <!--  <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Testimonial</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.privacypolicygenerator.org/live.php?token=7KGdjhQWAzMKz1OK5Bzf2jbr5IsDyMMr" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="extra.html#contact" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#courses" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.termsandconditionsgenerator.com/live.php?token=SINKgdDHQRrPJVJpE6JMt6ziiGttoztp" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Patel Nagar, New Delhi-08, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
+
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+            <a href="https://instagram.com/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:support@edukul.online" class="footer-link" target="_blank">support@edukul.online</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2023 @EduKul. All Rights Reserved by <a href="https://github.com/DeadSOUL-Studios/" class="copyright-link" target="_blank">DeadSOUL-Studios.</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+
+
+
+  
+
+
+<!--  <input type="button" value="GET" onclick="get()"> -->
+
+
+
+
+<!-- Main Things to get value -->
+<!-- <input type="text" id="logId" />
+<div id="logId1"></div>
+ -->
+
+
+
+
+<!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzYQqSm4wbXp9fTpPrfMMcEyziBh01LK4SW4tGTBpv5yLvJLCJ9zQbP7QvCELy9pe7PiQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script> -->
+<script>
+window.onbeforeunload = () => "Did you save your order Id?";
+
+
+</script>
+
+<script type="text/javascript">
+	function support(){
+		location.href = "extra.html#contact";
+	}
+</script>
+
+	<script>
+function get () {
+
+
+
+
+
+	// var orderID = Math.floor(Math.random() * 100000);
+	var orderID = "Loading..."
+  // (A) GET FROM LOCAL STORAGE
+  var one = localStorage.getItem("one"),
+      two = localStorage.getItem("two"),
+      three = localStorage.getItem("three"),
+      four = localStorage.getItem("four"),
+      five = localStorage.getItem("five"),
+      six = localStorage.getItem("six"),
+      seven = localStorage.getItem("seven");
+
+  // (B) IT WORKS!
+  // console.log(one);
+  // console.log(two);
+  // console.log(three);
+  // console.log(four);
+  // console.log(five);
+  // console.log(six);
+  // console.log(seven);
+  // console.log(orderID);
+
+  // (C) CLEAR LOCAL STORAGE
+  // localStorage.removeItem("KEY");
+  // localStorage.clear();
+  //document.getElementById("logId").value=one;
+	 document.getElementById("cName").innerHTML="Loading...";
+
+	 document.getElementById('courseName').value = "Loading...";
+	  document.getElementById("courseCode").value=two;
+	 //document.getElementById("coursePrice").innerHTML=three;
+	  document.getElementById("userName").value=four;
+	  document.getElementById("userMail").value=five;
+	  document.getElementById("userNumber").value=six;
+	  document.getElementById("TransactionID").value=seven;
+	  
+	 
+	 document.getElementById("displayID").innerHTML="Your Order Id is "+orderID+", Please keep it safe untill the course is delivered.";
+
+
+
+
+	 
+}
+</script>
+
+<script type="text/javascript">
+	function setData(){
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbw5W53E6FIgCrNJIQOvByteddtM4iXXBEVhXH9BCg9TFOl9cc6lXboXb36SO-8cxHFU/exec'
+            const form = document.forms['google-sheet']
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Purchasing..! We Will Deliver Your Course Soon..."))
+                .catch(error => console.error('Error!', error.message))
+
+
+
+	}
+</script>
+
+
+
+
+
+<script type="text/javascript" type="module">
+
+
+	let courses = [
+  ["SGAM99", "Shwetabh's Attack Mode Phsycology Course"],
+ ["JPP149", "Jordan Peterson - Personality Course"],
+  ["IGK199", "Iman Gadzhi's Kaizen Cure Course"],
+  ["ETH199", "Full Ethical Hacking Course with Practicals"],
+  ["TSEH49", "Technical Sagar's Ethical Hacking Course"],
+  ["EHWP29", "Ethical Hacking with Python Course"],
+  ["SS7T29", "Signaling System 7 in Telecommunication"],
+  ["DPKL49", "Active Directory Penetration with Kali Linux"],
+  ["REAS99", "Reverse Engineering and Android Apps"],
+  ["AETH49", "Complete Android Ethical Hacking Course"],
+  ["HWTA49", "Hacking with Termux"],
+  ["ACJ199", "Apna College Alpha 4.0 Java"],
+  ["PWML99", "Python with Machine Learning"],
+
+  ["DGPT99", "Dhruv Rathee's MasterGPT"],
+  ["ACW149", "Apna College Full Stack Web Development"],
+  ["WDBC79", "Web Development Bootcamp"],
+  ["URRM49", "The Ultimate React Course"],
+  ["BRAN29", "Building RESTful APIs with Node.js and Express"],
+  ["APPC99", "Adobe Photoshop Professional Course"],
+  ["MGDM49", "Motion Graphics 2D and 3D with After Effects and Autodesk"],
+  ["EMAD49", "Excel: Managing and Analysing Data"],
+  ["MTLB49", "MATLAB Full Course for Engineers and Developers"],
+
+  ["DMC149", "Largest Digital Marketing Course in The World"],
+  ["PFDM99", "Paid Freelancing and Digital Marketing Course"],
+  ["HAFC99", "Hadi's Full Amazon FBA Course With Tools"],
+  ["VAGA49", "VagaFX Complete Trading Course"],
+  ["ATRW99", "Andrew Tate's Real World Money Making Course"],
+  ["ISPY99", "Information Security 2023: Protect Yourself From Hackers"],
+  ["CPM149", "All Campus Placement Materials 2023"],
+  ["MIHP49", "Mega Instagram Hackpack with Tools"],
+  ["PHP149", "Paid Hackpack Complete Course with Tools"],
+
+  ["CCIP99", "CCTV and IP Camera Hacking Course"],
+  ["SCVS49", "Sim Cloning and Virus Spreading Course"],
+  ["WBFC29", "WhatsApp Banning Course with Tools"],
+  ["PGWH49", "Payment Gateway Bypass and WiFi Hacking"],
+  ["A2YT29", "A2 Sir's YouTube Mastery Course"]
+];
+
+
+	var a = "";
+	function getData(){
+		fetch("https://script.google.com/macros/s/AKfycby6KbxC7ae68S2OkkVTLd1zkGN3P3paxpaJGLGu5_cBBxhu5REj277Jpo3jA16FUaV2/exec").then(res=> res.json()).then(data => {
+        a=JSON.stringify(data);
+        //a=JSON.parse(a);
+        // console.log(a);
+        a = a.replace('["Name","Email","Number","Course","Code","TransactionID","OrderID"]', "");
+
+        if(new RegExp(document.getElementById("TransactionID").value).test(a)){
+		// console.log(a.slice(a.indexOf(document.getElementById("TransactionID").value)+3, a.indexOf(document.getElementById("TransactionID").value)+8));
+
+		// document.getElementById("OrderID").value = a.slice(a.indexOf(document.getElementById("TransactionID").value)+3, a.indexOf(document.getElementById("TransactionID").value)+8);
+
+orderID=a.slice(a.indexOf(document.getElementById("TransactionID").value)+21, a.indexOf(document.getElementById("TransactionID").value)+26);
+
+		document.getElementById("displayID").innerHTML="Your Order Id is "+orderID+", Please keep it safe untill the course is delivered.";
+
+		document.getElementById("OrderID").value=orderID;
+
+		one = a.slice(a.indexOf(document.getElementById("TransactionID").value)-8,a.indexOf(document.getElementById("TransactionID").value)-3);
+
+
+for(var i = 0; i < courses.length; i++) {
+	if(new RegExp(one).test(courses[i][0])){
+		one = courses[i][1];
+	}
+	// console.log(courses[i][1]);
+}
+
+
+
+
+
+
+// const parts = [
+//   new Blob(['you construct a file...'], {
+//     type: 'text/plain'
+//   }),
+//   ' Same way as you do with blob',
+//   new Uint16Array([33])
+// ];
+
+
+// 		// document.getElementById('file').value = function(){
+//   var file = new File(parts, "courses.txt");
+//   let reader = new FileReader();
+
+//   reader.readAsText(file);
+
+//   reader.onload = function() {
+//     console.log(reader.result);
+//   };
+
+//   reader.onerror = function() {
+//     console.log(reader.error);
+//   };
+
+// };
+
+
+// 		const readline = require('readline');
+// 		const file = readline.createInterface({
+//     input: fs.createReadStream('source_to_file'),
+//     output: process.stdout,
+//     terminal: false
+// });
+// 		file.on('line', (line) => {
+//     if(new RegExp(document.getElementById(one).value).test(line)){
+//          		one = line.substring(line.indexOf(" ")+2);
+//          	}
+// });
+
+
+
+
+
+
+
+
+
+
+
+		// import { open } from 'node:fs/promises';
+		// 	myFileReader();
+		// 	async function myFileReader() {
+  //   		const file = await open('./courses.txt');
+  //   		for await (const line of file.readLines()) {
+  //       	if(new RegExp(document.getElementById(one).value).test(line)){
+  //       		one = line.substring(line.indexOf(" ")+2);
+  //       	}
+  //   	}
+
+// import { createRequire } from 'module';
+// const require = createRequire(import.meta.url);
+//   		const fs = require("fs");
+// const readline = require("readline");
+
+// const input_path = "course.txt";
+
+
+// const inputStream = fs.createReadStream(input_path);
+// var lineReader = readline.createInterface({
+//   input: inputStream,
+//   terminal: false,
+// });
+// lineReader.on("line", function (line) {
+//   if(new RegExp(one).test(line)){
+//          		one = line.substring(line.indexOf(" ")+2);
+//          	}
+// });
+
+
+
+alert("You have entered an old Transaction Id, loading it's info.");
+		document.getElementById("cName").innerHTML= one;
+
+	 document.getElementById('courseName').value = one;
+	}
+	else{
+		orderID = (""+Math.random()).substring(2,7);
+		one = localStorage.getItem("one");
+		document.getElementById("displayID").innerHTML="Your Order Id is "+orderID+", Please keep it safe untill the course is delivered.";
+
+		document.getElementById("OrderID").value=orderID;
+		document.getElementById("cName").innerHTML= one;
+
+	 document.getElementById('courseName').value = one;
+
+		setData();
+
+
+	}
+        // a.push(data);
+        // console.log(a);
+        // handler(a);
+    });
+
+
+	}
+	getData();
+	// setTimeout(() => { console.log( a ) }, 4000);
+	// setTimeout(() => {
+		
+	// }, 5000);
+
+
+
+
+
+</script>
+  <script src="./assets/js/script.js" defer></script>
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,3308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)">
+
+</head>
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">EduKul</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">EduKul</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#event" class="navbar-link" data-nav-toggler>Projects</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+ -->
+          <li class="navbar-item">
+            <a href="extra.html#contact" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="extra.html#about" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">About us</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field" id="searchBox">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler id="searchButton" onclick="search()">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+  	<article>
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="personality" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Personality Development</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/attack-mode.jpg" width="370" height="270" loading="lazy"
+                    alt="Shwetabh's Attack Mode" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">30 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">2.4GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#SGAM99" class="card-title">Shwetabh's Attack Mode Phsycology Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(28 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;2,500</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">182 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/peterson.jpg" width="370" height="270" loading="lazy"
+                    alt="Jordan Peterson - Personality" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advanced</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">8 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">2.8GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#JPP149" class="card-title">Jordan Peterson - Personality Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(36 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;12,299</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">112 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/kaizen-cure.jpg" width="370" height="270" loading="lazy"
+                    alt="Iman Gadzhi's Kaizen Cure" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">30 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">3.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#IGK199" class="card-title">Iman Gadzhi's Kaizen Cure Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(23 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;199</span>
+
+                      <del class="del">&#8377;20,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">86 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="hacking" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Ethical Hacking</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/ethical-hacking.jpg" width="370" height="270" loading="lazy"
+                    alt="Full Ethical Hacking Course with Practicals" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">40 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">9GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#ETH199" class="card-title">Full Ethical Hacking Course with Practicals</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(52 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;199</span>
+
+                      <del class="del">&#8377;9,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">427 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/sagar.jpg" width="370" height="270" loading="lazy"
+                    alt="Technical Sagar's Ethical Hacking" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">40 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">4.4GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#TSEH49" class="card-title">Technical Sagar's Ethical Hacking Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(19 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">79 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/hacking-python.jpg" width="370" height="270" loading="lazy"
+                    alt="Ethical Hacking with Python" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">9 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.8GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#EHWP29" class="card-title">Ethical Hacking with Python Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(26 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;29</span>
+
+                      <del class="del">&#8377;799</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">107 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/ss7.jpg" width="370" height="270" loading="lazy"
+                    alt="Signaling System 7" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">15 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">750MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#SS7T29" class="card-title">Signaling System 7 in Telecommunication</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(14 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;29</span>
+
+                      <del class="del">&#8377;499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">54 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/directory-penetration.jpg" width="370" height="270" loading="lazy"
+                    alt="Active Directory Penetration with Kali Linux" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">6 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">4.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#DPKL49" class="card-title">Active Directory Penetration with Kali Linux</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(49 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">139 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+          <!-- <a href="#" class="btn btn-primary">
+            <span class="span">View All Courses</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a> -->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="android" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Android Courses</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/reverse.jpg" width="370" height="270" loading="lazy"
+                    alt="Reverse Engineering and Android Apps from Scratch" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">40 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.41GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#REAS99" class="card-title">Reverse Engineering and Android Apps from Scratch</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(37 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;1,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">96 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/hacking-android.jpg" width="370" height="270" loading="lazy"
+                    alt="Complete Android Ethical Hacking Practical Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">1 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">584MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#AETH49" class="card-title">Complete Android Ethical Hacking Practical Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(32 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">84 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/hacking-termux.jpg" width="370" height="270" loading="lazy"
+                    alt="Hacking with Termux" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">5 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">500MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#HWTA49" class="card-title">Hacking with Termux Full Android Based Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(37 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">167 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="coding" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Coding And AI</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/apna-java.jpg" width="370" height="270" loading="lazy"
+                    alt="Apna College Alpha 4.0 Java Placement" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">45 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">30GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#ACJ199" class="card-title">Apna College Alpha 4.0 Java Placement</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(47 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;199</span>
+
+                      <del class="del">&#8377;4,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">254 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/python-ml.jpg" width="370" height="270" loading="lazy"
+                    alt="Python with Machine Learning" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advanced</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">20 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">2.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#PWML99" class="card-title">Python with Machine Learning (Basic to Advance)</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(26 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">109 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/mastergpt.jpg" width="370" height="270" loading="lazy"
+                    alt="Dhruv Rathee's MasterGPT Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">6 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#DGPT99" class="card-title">Dhruv Rathee's MasterGPT Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(39 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">192 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="web" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Web Development</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/apna-web.jpg" width="370" height="270" loading="lazy"
+                    alt="Apna College Delta Batch Full Stack Web Development" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">80 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">8GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#ACW149" class="card-title">Apna College Full Stack Web Development Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(43 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;7,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">213 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/web-bootcamp.jpg" width="370" height="270" loading="lazy"
+                    alt="Complete 2022 Web Development Bootcamp" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">35 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">23GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#WDBC79" class="card-title">Complete 2022 Web Development Bootcamp</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(31 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;79</span>
+
+                      <del class="del">&#8377;3,199</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">173 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/react.jpg" width="370" height="270" loading="lazy"
+                    alt="Udemy: The Ultimate React Course 2023: React, Redux & More" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">141 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">41.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#URRM49" class="card-title">The Ultimate React Course 2023: React, Redux & More</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(53 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">351 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/restful.jpg" width="370" height="270" loading="lazy"
+                    alt="Building RESTful APIs with Node.js and Express" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">2 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">200MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#BRAN29" class="card-title">Building RESTful APIs with Node.js and Express</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(24 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;29</span>
+
+                      <del class="del">&#8377;499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">136 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="software" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Softwares</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/photoshop.jpg" width="370" height="270" loading="lazy"
+                    alt="Adobe Photoshop Professional Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">35 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">12.5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#APPC99" class="card-title">Adobe Photoshop Professional Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(48 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">233 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/motion.jpg" width="370" height="270" loading="lazy"
+                    alt="Motion Graphics 2D and 3D with After Effects and Autodesk" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">5GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#MGDM49" class="card-title">Motion Graphics 2D and 3D with After Effects and Autodesk</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(25 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;799</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">184 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/excel.jpg" width="370" height="270" loading="lazy"
+                    alt="Excel: Managing and Analysing Data" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10+ Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.8GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#EMAD49" class="card-title">Excel: Managing and Analysing Data</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(41 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">146 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/matlab.jpg" width="370" height="270" loading="lazy"
+                    alt="MATLAB Full Course for Engineers and Developers" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">4GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#MTLB49" class="card-title">MATLAB Full Course for Engineers and Developers</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(21 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;1,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">98 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+  		
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="marketing" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Digital Marketing and Money Making</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/largest-dm.jpg" width="370" height="270" loading="lazy"
+                    alt="Largest Digital Marketing Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">18 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.3TB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#DMC149" class="card-title">Largest Digital Marketing Course in The World</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(44 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;9,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">311 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/dm-freelancing.jpg" width="370" height="270" loading="lazy"
+                    alt="Paid Freelancing and Digital Marketing Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">50 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">50GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#PFDM99" class="card-title">Paid Freelancing and Digital Marketing Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(37 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">294 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/fba.jpg" width="370" height="270" loading="lazy"
+                    alt="Hadi's Full Amazon FBA Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">6 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">14GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#HAFC99" class="card-title">Hadi's Full Amazon FBA Course With Tools</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(43 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">103 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/vaga-trading.jpg" width="370" height="270" loading="lazy"
+                    alt="VagaFX Complete Trading Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">9 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#VAGA49" class="card-title">VagaFX Complete Trading Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(17 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;1,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">89 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/tate.jpg" width="370" height="270" loading="lazy"
+                    alt="Andrew Tate's Real World Money Making Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">9 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">18GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#ATRW99" class="card-title">Andrew Tate's Real World Money Making Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(36 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;4,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">263 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="job" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Being Safe and Jobs</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/protection.jpg" width="370" height="270" loading="lazy"
+                    alt="Information Security 2023: Protect Yourself From Hackers" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">50 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">750MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#ISPY99" class="card-title">Information Security 2023: Protect Yourself From Hackers</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(27 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;2,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">127 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/placement.jpg" width="370" height="270" loading="lazy"
+                    alt="All Campus Placement Materials 2023" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">100 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">30GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#CPM149" class="card-title">All Campus Placement Materials 2023 (100+ Companies)</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(34 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;9,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">239 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course" id="illegal" aria-label="course"
+        style="background-image: url('./assets/images/course-bg.jpg')">
+        <div class="container">
+
+          <!-- <p class="section-subtitle">Popular Courses</p> -->
+
+          <h2 class="h2 section-title" style="color: var(--ultramarine-blue);">Illegal Hacking</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/insta-hack.jpg" width="370" height="270" loading="lazy"
+                    alt="Mega Instagram Hackpack with Tools" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">350MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#MIHP49" class="card-title">Mega Instagram Hackpack with Tools</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(42 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;2,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">343 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/social-hack.jpg" width="370" height="270" loading="lazy"
+                    alt="Paid Hackpack Course with Tools" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">100+ Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">51GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#PHP149" class="card-title">Paid Hackpack Complete Course with Tools</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(29 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;9,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">225 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/camera.jpg" width="370" height="270" loading="lazy"
+                    alt="CCTV and IP Camera Hacking Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advance</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10+ Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">1.3GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#CCIP99" class="card-title">CCTV and IP Camera Hacking Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(19 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;99</span>
+
+                      <del class="del">&#8377;4,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">93 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/virus.jpg" width="370" height="270" loading="lazy"
+                    alt="Sim Cloning and Virus Spreading Course" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">15+ Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">8GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#SCVS49" class="card-title">Sim Cloning and Virus Spreading Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(23 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;149</span>
+
+                      <del class="del">&#8377;7,999</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">132 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/wa-banning.jpg" width="370" height="270" loading="lazy"
+                    alt="WhatsApp Banning Course with Tools" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">10+ Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">650MB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#WBFC29" class="card-title">WhatsApp Banning Course with Tools</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(17 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;29</span>
+
+                      <del class="del">&#8377;499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">152 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/courses/gateway.jpg" width="370" height="270" loading="lazy"
+                    alt="Payment Gateway Bypass and WiFi Hacking" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">20 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="folder-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">2.4GB</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="coursesinfo.html#PGWH49" class="card-title">Payment Gateway Bypass and WiFi Hacking</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(27 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span">&#8377;49</span>
+
+                      <del class="del">&#8377;5,499</del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">173 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+          
+
+        </div>
+      </section>
+  	</article>
+  </main>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">EduKul</a> -->
+          <!-- <div style="width: 90px;"><div style="float: left;"><img src="favicon.png" class="logo" width="80px" style="  
+  position: relative;"></div><p style="float: left;">EduKul</p></div> -->
+
+  		<!-- <img src="favicon.png" width="80px;"> -->
+  		<!-- <div>
+    <p style="float: left;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="margin-left: 20px;">EduKul</p>
+</div> -->
+<div style="clear: left;">
+    <p style="float: left; margin-right: 20px;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="padding-top: 25px;">EduKul Online</p>
+</div>
+
+          <p class="section-text">
+            EduKul is an educational company founded by two friends, Ayush and Vivek. EduKul is known for its education delivery at cheap rates and within minutes of purchasing.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://instagram.com/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/DeadSOUL-Studios/" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="send-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:support@edukul.online" class="social-link" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="extra.html#about" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Request Courses</span>
+            </a>
+          </li>
+
+ <!--          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+         <!--  <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Testimonial</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.privacypolicygenerator.org/live.php?token=7KGdjhQWAzMKz1OK5Bzf2jbr5IsDyMMr" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="extra.html#contact" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#courses" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.termsandconditionsgenerator.com/live.php?token=SINKgdDHQRrPJVJpE6JMt6ziiGttoztp" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Patel Nagar, New Delhi-08, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
+
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+            <a href="https://instagram.com/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:support@edukul.online" class="footer-link" target="_blank">support@edukul.online</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2023 @EduKul. All Rights Reserved by <a href="https://github.com/DeadSOUL-Studios/" class="copyright-link" target="_blank">DeadSOUL-Studios.</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+    <script type="text/javascript">
+    function search(){
+    	str = document.getElementById('searchBox').value;//jQuery("#search_text").val();
+	    if (parseInt(navigator.appVersion)<4) return;
+	    var strFound;
+	    if (window.find) {
+
+	        // CODE FOR BROWSERS THAT SUPPORT window.find
+
+	        var original_content = window;
+	        strFound=original_content.find(str);
+	        if (!strFound) {
+	            strFound=original_content.find(str,0,1);
+	            while (original_content.find(str,0,1)) continue;
+	        }
+	    }
+	    else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+	        // EXPLORER-SPECIFIC CODE
+
+	        if (TRange!=null) {
+	            TRange.collapse(false);
+	            strFound=TRange.findText(str);
+	            if (strFound) TRange.select();
+	        }
+	        if (TRange==null || strFound==0) {
+	            TRange=self.document.body.createTextRange();
+	            strFound=TRange.findText(str);
+	            if (strFound) TRange.select();
+	        }
+	    }
+	    else if (navigator.appName=="Opera") {
+	        alert ("Opera browsers not supported, sorry...")
+	        return;
+	    }
+	    if (!strFound) alert ("String '"+str+"' not found!")
+	    return;
+	}
+  </script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>

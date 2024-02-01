@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduKul Gateway</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+<!--   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-1.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/hero-abs-2.png" media="min-width(768px)"> -->
+
+</head>
+<body onload="get()" id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="index.html" class="logo">EduKul</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">EduKul</a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="courses.html" class="navbar-link" data-nav-toggler>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#event" class="navbar-link" data-nav-toggler>Projects</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
+          </li>
+ -->
+          <li class="navbar-item">
+            <a href="extra.html#contact" class="navbar-link" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+       <!--  <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button> -->
+
+        <a href="extra.html#about" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">About us</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  
+
+
+<!--  <input type="button" value="GET" onclick="get()"> -->
+
+
+
+
+<!-- Main Things to get value -->
+<!-- <input type="text" id="logId" />
+<div id="logId1"></div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+	<article>
+		      <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Purchasing</p>
+
+          <h2 class="h2 section-title"><span id="logId"></span></h2>
+
+          <form class="newsletter-form" name="google-sheet" method="post" action="javascript:go()">
+          	<!-- <div class="input-wrapper">
+          		<input type="email" name="email" placeholder="Enter your mail address">
+
+          		<input type="text" name="text" placeholder="Enter your mail address">
+          	</div> -->
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="text" name="Name" aria-label="Name" placeholder="Enter your full name" required
+                class="email-field" id="name">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="email" name="Email" aria-label="Email" placeholder="Enter your mail address" required
+                class="email-field" id="email">
+
+              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+
+            </div>
+
+            <div class="input-wrapper" style="margin-bottom: 20px;">
+              <input type="number" name="Number" aria-label="Number" placeholder="Enter your phone number" required
+                class="email-field no-spinner" id="phone">
+
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+            	<button type="submit" class="btn btn-primary" name="submit" id="submit" style="position: relative;">
+              <span class="span">Next</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+            </div>
+          </form>
+
+        </div>
+      </section>
+      
+	</article>
+</main>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">EduKul</a> -->
+          <!-- <div style="width: 90px;"><div style="float: left;"><img src="favicon.png" class="logo" width="80px" style="  
+  position: relative;"></div><p style="float: left;">EduKul</p></div> -->
+
+  		<!-- <img src="favicon.png" width="80px;"> -->
+  		<!-- <div>
+    <p style="float: left;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="margin-left: 20px;">EduKul</p>
+</div> -->
+<div style="clear: left;">
+    <p style="float: left; margin-right: 20px;"><img src="favicon.png" width="80px"></p>
+    <p class="logo" style="padding-top: 25px;">EduKul Online</p>
+</div>
+
+          <p class="section-text">
+            EduKul is an educational company founded by two friends, Ayush and Vivek. EduKul is known for its education delivery at cheap rates and within minutes of purchasing.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://instagram.com/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/DeadSOUL-Studios/" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://t.me/edukul_online" class="social-link" target="_blank">
+                <ion-icon name="send-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:support@edukul.online" class="social-link" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="extra.html#about" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Request Courses</span>
+            </a>
+          </li>
+
+ <!--          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+         <!--  <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Testimonial</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.privacypolicygenerator.org/live.php?token=7KGdjhQWAzMKz1OK5Bzf2jbr5IsDyMMr" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="extra.html#contact" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="extra.html#faq" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#courses" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.termsandconditionsgenerator.com/live.php?token=SINKgdDHQRrPJVJpE6JMt6ziiGttoztp" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Patel Nagar, New Delhi-08, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
+
+            <a href="https://t.me/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+            <a href="https://instagram.com/edukul_online" class="footer-link" target="_blank">@edukul_online</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:support@edukul.online" class="footer-link" target="_blank">support@edukul.online</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2023 @EduKul. All Rights Reserved by <a href="https://github.com/DeadSOUL-Studios/" class="copyright-link" target="_blank">DeadSOUL-Studios.</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+<script>
+
+function go() {
+	location.href = "index.html";
+  // (A) VARIABLES TO PASS
+  var four = document.getElementById("name").value,
+      five = document.getElementById("email").value,
+      six = document.getElementById("phone").value;
+
+
+  // (B) SAVE TO LOCAL STORAGE
+  localStorage.setItem("four", four);
+  localStorage.setItem("five", five);
+  localStorage.setItem("six", six);
+
+ 
+  // (C) REDIRECT OR OPEN NEW WINDOW IF YOU WANT
+   location.href = "payment.html";
+  // window.Open("payment.html");
+}
+</script>
+
+	<script>
+function get () {
+  // (A) GET FROM LOCAL STORAGE
+  var one = localStorage.getItem("one"),
+      two = localStorage.getItem("two"),
+      three = localStorage.getItem("three");
+
+  // (B) IT WORKS!
+  // console.log(one);
+  // console.log(two);
+  //  console.log(three);
+
+  // (C) CLEAR LOCAL STORAGE
+  // localStorage.removeItem("KEY");
+  // localStorage.clear();
+  //document.getElementById("logId").value=one;
+	document.getElementById("logId").innerHTML=one;
+}
+</script>
+
+
+
+
+
+  <script src="./assets/js/script.js" defer></script>
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
